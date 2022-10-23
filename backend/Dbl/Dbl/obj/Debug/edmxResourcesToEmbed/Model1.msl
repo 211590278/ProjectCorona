@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="coronaModelStoreContainer" CdmEntityContainer="coronaEntities">
+    <EntitySetMapping Name="Member">
+      <EntityTypeMapping TypeName="coronaModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="idMember" ColumnName="idMember" />
+          <ScalarProperty Name="mobilePhone" ColumnName="mobilePhone" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coronaDetails">
+      <EntityTypeMapping TypeName="coronaModel.coronaDetails">
+        <MappingFragment StoreEntitySet="coronaDetails">
+          <ScalarProperty Name="dateRecovery" ColumnName="dateRecovery" />
+          <ScalarProperty Name="dateTrue" ColumnName="dateTrue" />
+          <ScalarProperty Name="madeVaccination" ColumnName="madeVaccination" />
+          <ScalarProperty Name="dateOfVaccination" ColumnName="dateOfVaccination" />
+          <ScalarProperty Name="idMember" ColumnName="idMember" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

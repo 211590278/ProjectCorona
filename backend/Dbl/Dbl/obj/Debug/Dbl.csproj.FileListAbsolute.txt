@@ -1,0 +1,11 @@
+C:\לימודים\הדסים\Dbl\Dbl\bin\Debug\Dbl.dll.config
+C:\לימודים\הדסים\Dbl\Dbl\bin\Debug\Dbl.dll
+C:\לימודים\הדסים\Dbl\Dbl\bin\Debug\Dbl.pdb
+C:\לימודים\הדסים\Dbl\Dbl\bin\Debug\EntityFramework.dll
+C:\לימודים\הדסים\Dbl\Dbl\bin\Debug\EntityFramework.SqlServer.dll
+C:\לימודים\הדסים\Dbl\Dbl\bin\Debug\EntityFramework.xml
+C:\לימודים\הדסים\Dbl\Dbl\bin\Debug\EntityFramework.SqlServer.xml
+C:\לימודים\הדסים\Dbl\Dbl\obj\Debug\Dbl.csprojAssemblyReference.cache
+C:\לימודים\הדסים\Dbl\Dbl\obj\Debug\Dbl.csproj.CopyComplete
+C:\לימודים\הדסים\Dbl\Dbl\obj\Debug\Dbl.dll
+C:\לימודים\הדסים\Dbl\Dbl\obj\Debug\Dbl.pdb

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="coronaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="coronaDetails">
+    <Key>
+      <PropertyRef Name="idMember" />
+    </Key>
+    <Property Name="idMember" Type="int" Nullable="false" />
+    <Property Name="dateOfVaccination" Type="date" Nullable="false" />
+    <Property Name="madeVaccination" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="dateTrue" Type="date" />
+    <Property Name="dateRecovery" Type="date" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="idMember" />
+    </Key>
+    <Property Name="firstName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="lastName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="dateOfBirth" Type="date" Nullable="false" />
+    <Property Name="phone" Type="int" Nullable="false" />
+    <Property Name="mobilePhone" Type="int" />
+    <Property Name="idMember" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__coronaDet__idMem__31EC6D26">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="coronaDetails" Type="Self.coronaDetails" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="idMember" />
+      </Principal>
+      <Dependent Role="coronaDetails">
+        <PropertyRef Name="idMember" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="coronaModelStoreContainer">
+    <EntitySet Name="coronaDetails" EntityType="Self.coronaDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__coronaDet__idMem__31EC6D26" Association="Self.FK__coronaDet__idMem__31EC6D26">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="coronaDetails" EntitySet="coronaDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

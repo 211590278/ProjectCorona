@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8c0aa532165e4be7b2d7a9191d42b0d5" Name="Diagram1">
+        <EntityTypeShape EntityType="coronaModel.Member" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="coronaModel.coronaDetails" Width="1.5" PointX="5" PointY="1" />
+        <AssociationConnector Association="coronaModel.FK__coronaDet__idMem__31EC6D26" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
